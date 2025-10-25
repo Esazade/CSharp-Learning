@@ -42,8 +42,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="CashPayment.cs" />
     <Compile Include="ChefRobot.cs" />
+    <Compile Include="CreditCardPayment.cs" />
     <Compile Include="GrillChefRobot.cs" />
+    <Compile Include="IPaymentMethod.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="SoupChefRobot.cs" />

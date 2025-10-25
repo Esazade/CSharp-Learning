@@ -34,19 +34,35 @@ namespace ConsoleApplication1
 
 
             //********** Polymorphism *************************
-            var soupRobot = new SoupChefRobot("Soupy");
-            var grillRobot = new GrillChefRobot("Grilly");
+            //var soupRobot = new SoupChefRobot("Soupy");
+            //var grillRobot = new GrillChefRobot("Grilly");
 
-            var myList=new List<ChefRobot>();
-            myList.Add(soupRobot);
-            myList.Add(grillRobot);
+            //var myList=new List<ChefRobot>();
+            //myList.Add(soupRobot);
+            //myList.Add(grillRobot);
 
-            foreach (var objectList in myList)
+            //foreach (var objectList in myList)
+            //{
+            //    objectList.Introduce();
+            //    objectList.CookSpecialty();
+            //}
+
+
+
+            //************ Abstraction **************************
+            List<IPaymentMethod> payments = new List<IPaymentMethod>
             {
-                objectList.Introduce();
-                objectList.CookSpecialty();
-            }
+                new CreditCardPayment("1234-5678-9012-3456"),
+                new CashPayment()
+            };
 
+            foreach (IPaymentMethod payment in payments)
+            {
+                Console.WriteLine("Payment Details: "+payment.GetPaymentDetails());
+                bool success = payment.ProcessPayment(250);
+                Console.WriteLine("Payment successful: " + success);
+                Console.WriteLine("---");
+            }
 
             Console.ReadLine();
         }

@@ -8,7 +8,7 @@ namespace ConsoleApplication1
 {
     class SoupChefRobot:ChefRobot
     {
-        public SoupChefRobot(string name) : base() { }
+        public SoupChefRobot(string name): base(name)  { }
 
         public void MakeSoup()
         {
@@ -22,5 +22,12 @@ namespace ConsoleApplication1
                 Console.WriteLine(Name+" can't make soup. Not enough battery!");
             }
         }
+
+        public override void CookSpecialty()
+        {
+            Console.WriteLine("I'm making my special tomato soup!");
+            BatteryLevel -= 15;
+        }
+
     }
 }

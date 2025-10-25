@@ -18,19 +18,35 @@ namespace ConsoleApplication1
 
 
             //********** Inherit *************************
-            var robot1 = new ChefRobot();
+            //var robot1 = new ChefRobot();
+            //var soupRobot = new SoupChefRobot("Soupy");
+            //var grillRobot = new GrillChefRobot();
+
+            //grillRobot.GrillTemperature = 250;
+
+            //grillRobot.Introduce();
+            //grillRobot.CookFood("Chicken");
+            //grillRobot.GrillSteak();
+
+            //soupRobot.Introduce();
+            //soupRobot.MakeSoup();
+
+
+
+            //********** Polymorphism *************************
             var soupRobot = new SoupChefRobot("Soupy");
-            var grillRobot = new GrillChefRobot();
+            var grillRobot = new GrillChefRobot("Grilly");
 
-            grillRobot.GrillTemperature = 250;
+            var myList=new List<ChefRobot>();
+            myList.Add(soupRobot);
+            myList.Add(grillRobot);
 
-            grillRobot.Introduce();
-            grillRobot.CookFood("Chicken");
-            grillRobot.GrillSteak();
+            foreach (var objectList in myList)
+            {
+                objectList.Introduce();
+                objectList.CookSpecialty();
+            }
 
-            soupRobot.Introduce();
-            soupRobot.MakeSoup();
-            
 
             Console.ReadLine();
         }

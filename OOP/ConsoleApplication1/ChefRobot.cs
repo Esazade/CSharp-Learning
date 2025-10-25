@@ -6,7 +6,6 @@ using System.Threading.Tasks;
 
 namespace ConsoleApplication1
 {
-    //Encapsulation
     class ChefRobot
     {
         private string name;
@@ -28,9 +27,9 @@ namespace ConsoleApplication1
             }
         }
 
-        public ChefRobot()
+        public ChefRobot(string name)
         {
-            name = "Test";
+            this.name = name;
             batteryLevel = 100;
         }
         public void Introduce()
@@ -43,5 +42,12 @@ namespace ConsoleApplication1
             Console.WriteLine(Name + " is cooking " + foodName + " for you! Nom nom.");
             BatteryLevel -= 10;
         }
+
+        public virtual void CookSpecialty()
+        {
+            Console.WriteLine("I'm cooking a generic dish!");
+        }
+
+       
     }
 }

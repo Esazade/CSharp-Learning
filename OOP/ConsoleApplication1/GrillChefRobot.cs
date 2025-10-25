@@ -21,6 +21,11 @@ namespace ConsoleApplication1
             }
         }
 
+        public GrillChefRobot(string name):base(name)
+        {
+            GrillTemperature = 250; 
+        }
+
         public void GrillSteak()
         {
             if (GrillTemperature > 200 && BatteryLevel > 20)
@@ -31,6 +36,19 @@ namespace ConsoleApplication1
             else
             {
                 Console.WriteLine(Name + " can't grill. Check temperature (" + GrillTemperature + "°) and battery ({"+BatteryLevel+"}%)!");
+            }
+        }
+
+        public override void CookSpecialty()
+        {
+            if (GrillTemperature > 220)
+            {
+                Console.WriteLine("I'm grilling my special ribeye steak!");
+                BatteryLevel -= 25;
+            }
+            else
+            {
+                Console.WriteLine(Name + " can't grill. Check temperature (" + GrillTemperature + "°) and battery ({" + BatteryLevel + "}%)!");
             }
         }
 

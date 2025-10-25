@@ -43,8 +43,10 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="ChefRobot.cs" />
+    <Compile Include="GrillChefRobot.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SoupChefRobot.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

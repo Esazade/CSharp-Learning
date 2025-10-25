@@ -4,3 +4,9 @@ D:\leyla\practice c#\ConsoleApplication1\ConsoleApplication1\bin\Debug\ConsoleAp
 D:\leyla\practice c#\ConsoleApplication1\ConsoleApplication1\obj\Debug\ConsoleApplication1.csprojResolveAssemblyReference.cache
 D:\leyla\practice c#\ConsoleApplication1\ConsoleApplication1\obj\Debug\ConsoleApplication1.exe
 D:\leyla\practice c#\ConsoleApplication1\ConsoleApplication1\obj\Debug\ConsoleApplication1.pdb
+D:\leyla\practice c#\Csharp-Learning\OOP\ConsoleApplication1\bin\Debug\ConsoleApplication1.exe.config
+D:\leyla\practice c#\Csharp-Learning\OOP\ConsoleApplication1\obj\Debug\ConsoleApplication1.exe
+D:\leyla\practice c#\Csharp-Learning\OOP\ConsoleApplication1\obj\Debug\ConsoleApplication1.pdb
+D:\leyla\practice c#\Csharp-Learning\OOP\ConsoleApplication1\bin\Debug\ConsoleApplication1.exe
+D:\leyla\practice c#\Csharp-Learning\OOP\ConsoleApplication1\bin\Debug\ConsoleApplication1.pdb
+D:\leyla\practice c#\Csharp-Learning\OOP\ConsoleApplication1\obj\Debug\ConsoleApplication1.csprojResolveAssemblyReference.cache

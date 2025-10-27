@@ -22,6 +22,8 @@ namespace NotificationSystem
             Console.WriteLine("\n=== Status Report ===");
             _managerNotification.PrintStatusReport();
 
+            
+
             Console.ReadLine();
         }
     }
